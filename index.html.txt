@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Simples - Minha Biografia</title>
+  <style>
+    body {
+      background-color: #e6f2ff; /* cor suave */
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color:rgb(151, 42, 147);
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    ul {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    img.hobby {
+      width: 200px;
+      border-radius: 10px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    a {
+      color:rgb(201, 0, 204);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color:rgb(214, 209, 206);
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color:rgb(151, 42, 140);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #mensagem {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Maria Silva</h1>
+
+  <p>
+    Olá! Meu nome é Sandyeli, tenho 24 anos e moro em Arapiraca Alagoas. Gosto muito de tecnologia, mesculação, correr, música e viajar. Atualmente estou estudando programação e me dedicando a melhorar minhas habilidades em desenvolvimento web.
+  </p>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <ul>
+    <li>Musculação</li>
+    <li>Assistir Documentários</li>
+    <li>Viajar</li>
+  </ul>
+
+  <img src="https://cdn.pixabay.com/photo/2016/11/29/02/59/guitar-1869721_1280.jpg" alt="Musculação" class="hobby">
+
+  <table>
+    <tr>
+      <td>Japão</td>
+      <td><img src="https://flagcdn.com/w320/jp.png" alt="Bandeira do Brasil" width="100"></td>
+    </tr>
+    <tr>
+      <td>Itália</td>
+      <td><img src="https://flagcdn.com/w320/it.png" alt="Bandeira da Itália" width="100"></td>
+    </tr>
+    <tr>
+      <td>Canadá</td>
+      <td><img src="https://flagcdn.com/w320/ca.png" alt="Bandeira do Canadá" width="100"></td>
+    </tr>
+  </table>
+
+  <p>Visite um site que gosto: <a href="https://www.tecmundo.com.br" target="_blank">TecMundo</a></p>
+
+  <script>
+    function mostrarMensagem() {
+      const div = document.getElementById("mensagem");
+      div.textContent = "Nunca é tarde para aprender algo novo!";
+    }
+  </script>
+
+</body>
+</html>
